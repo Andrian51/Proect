@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космічна кава</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f26;
+            color: #fff;
+        }
+        header {
+            background-color: #1c1f42;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1a1d3a;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+        .coffee-image {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+        .coffee-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .coffee-description {
+            flex: 1;
+            padding: 20px;
+        }
+        .ingredients {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .size-selection {
+            margin-top: 20px;
+        }
+        .price {
+            font-weight: bold;
+            color: #f7d046;
+        }
+        .order-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f7d046;
+            color: #1c1f42;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .order-confirmation {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #00ffcc;
+            display: none;
+        }
+        footer {
+            background-color: #1c1f42;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #f7d046;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Космічна кава</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="coffee-image">
+            <img src="https://images.prom.ua/5715180933_kartina-za-nomerami.jpg" alt="Космічна кава">
+        </div>
+
+        <div class="coffee-description">
+            <h2>Назва кави: Галактичний Латте</h2>
+            <p>Зануртеся в космос і відчуйте незабутній смак Галактичного Латте! Це не просто кава, це неймовірна подорож через мільярди зірок і туманностей. Тонкий смак молочної туманності, насичене еспресо чорної діри та злегка солодкий метеоритний карамельний сироп – це лише частина того, що чекає вас у кожному ковтку.</p>
+            <p>Ми поєднали найкращі інгредієнти, щоб ви змогли відчути, як це – пити каву, яка буквально "підкорює космос". Ідеально підходить для тих, хто шукає нові враження і смаки, або просто хоче насолодитися чудовим напоєм в компанії зірок.</p>
+
+            <h3>Інгредієнти:</h3>
+            <ul class="ingredients">
+                <li>Молочна туманність (молоко та ваніль)</li>
+                <li>Чорна діра еспресо (інтенсивний еспресо)</li>
+                <li>Зоряний пил кориці (свіжа кориця)</li>
+                <li>Метеоритний карамельний сироп (карамель з нотками шоколаду)</li>
+            </ul>
+
+            <div class="size-selection">
+                <h3>Оберіть розмір кави:</h3>
+                <label>
+                    <input type="radio" name="size"> Малий (200 мл) - <span class="price">40 грн</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="size"> Середній (350 мл) - <span class="price">60 грн</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="size"> Великий (500 мл) - <span class="price">80 грн</span>
+                </label>
+            </div>
+
+            <button type="button" class="order-button" onclick="document.getElementById('order-confirmation').style.display='block'">Замовити космічну каву</button>
+            <p id="order-confirmation" class="order-confirmation">✨ Замовлення зроблено! Ваша кава вирушає в космос і буде доставлена прямо до вас!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Всі права захищені © 2025. Більше інформації про космічні напої можна знайти <a href="https://example.com" target="_blank">тут</a>.</p>
+    </footer>
+
+</body>
+</html>
